@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이미지사용하기</title>
+</head>
+<body>
+<h1>Image사용하기</h1>
+<p>개발자환경경로 : /webProject/src/main/webapp가 Root </p>
+<p>실행환경경로 : /webProject가 Root</p>
+<p>절대경로가 유지보수에 유리 /webProject/ 부분만 가변으로 사용</p>
+<p>절대경로이용하기1</p>
+<img alt="강아지" src="http://localhost:9090/webProject/images/cover.jpg" width="200px" height="200px">
+<p>절대경로이용하기2..파일이 폴더 이동 되어도 수정없음(더 좋다)</p>
+<img alt="강아지" src="/webProject/images/cover.jpg" width="200px" height="200px">
+<p>상대경로이용하기...현재위치기준</p>
+<figure>
+<img alt="강아지" src="./../images/cover.jpg" width="200px" height="200px">
+<figcaption>강아지입니다</figcaption>
+</figure>
+<p>./ : 제일상위 생략가능  ../ : 상위</p>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+label {width: 100pzx; display: inline-block; background-color: pink;}
+h1 {border: 1px solid green; width: 500px;}
+</style>
+</head>
+<body>
+<h1>로그인하기</h1>
+<!-- 주석 -->
+<!-- label, input요소는 inline요소이다.(content만큼만 자리차지, width 속성 변경 불가)
+	 h1요소는 block요소이다(1줄을 전체를 차지한다)
+	 width속성은 block요소(1줄 전체 차지)가 있어야 가능하다 그래서  
+	 label요소가 width속성을 사용하려면 display : inline-block로 이중요소를 갖게 한다
+submit는 서버로 전송하기 버튼이다 -->
+<form action="loginCheck.jsp" method="get">
+<fieldset>
+<legend>get방식</legend>
+<label>아이디 : </label><input type="text" name="userid" value="kim05134" size="20" autofocus="autofocus"> <br>
+<label>비밀번호 : </label><input type="password" name="userpw" value="1234" size="20"> <br>
+<input type="hidden" name="phone" value="010-1111-1111"><br>
+<input type="submit" value="서버로전송">
+</fieldset>
+</form>
+<hr>
+<form action="loginCheck.jsp" method="post">
+<fieldset>
+<legend>post방식</legend>
+<label>아이디 : </label><input type="text" name="user-id2" value="kim05134" size="20"> <br>
+<label>비밀번호 : </label><input type="password" name="user-pw2" value="1234" size="20"> <br>
+<input type="hidden" name="phone2" value="010-1111-1111"><br>
+<input type="submit" value="서버로전송">
+</fieldset>
+</form>
+</body>
+</html>

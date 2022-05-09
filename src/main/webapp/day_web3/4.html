@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+ul{
+	border: 5px solid gray;
+	padding: 10px;
+	list-style: none;
+}
+.inside{
+	list-style: square;
+	list-style-position: inside;
+}
+li {
+	border: 3px dotted gray;
+	margin: 5px;
+	padding: 10px;
+}
+li:hover {
+	background-color: navy;
+	color: white;
+}
+div{
+	border: 1px dotted gray;
+	padding: 5px;
+	margin: 5px;
+	}
+#container{
+	background-color: lightgreen;
+	background-clip: border-box;
+	background: url("../images/automobile.svg") repeat;
+	}
+/*  	background-clip: padding-box; */
+/* 	background-clip: content-box; */
+</style>
+</head>
+<body>
+<div id="container">
+  <div>
+	<h3> list-style-position을 지정하지 않음</h3>
+	  <ul>
+	    <li>회사소개</li>
+	    <li>도서</li>
+	    <li>자료실</li>
+	    <li>질문답변</li>
+	    <li>동영상강의</li>
+	  </ul>
+  </div>
+  
+  <div>
+	  <h3> list-style-position : inside</h3>
+	  <ul class=inside>
+	    <li>회사소개</li>
+	    <li>도서</li>
+	    <li>자료실</li>
+	    <li>질문답변</li>
+	    <li>동영상강의</li>
+	  </ul>
+  </div>
+  
+  </div>
+</body>
+</html>

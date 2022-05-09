@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>textarea</h1>
+<form>
+	<fieldset>
+	<legend>배송정보</legend>
+		<ul>
+			<li>
+				<label for="name">이름</label>
+				<input type="text" id="name">
+			</li>
+			<li>
+				<label for="memo">메모</label>
+				<textarea id="memo" cols="50" rows="4" ></textarea>
+			</li>
+		</ul>
+	</fieldset>
+</form>
+<hr>
+<h1>select option</h1>
+	<label for="prod1">상품 선택</label>
+	<select id="prod1">
+	<optgroup label="선물용">
+		<option value="special_3" selected>선물용 3kg</option>
+		<option value="special_5" >선물용 5kg</option>
+	</optgroup>
+	<optgroup label="가정용">
+		<option value="family_3" >가정용 3kg</option>
+		<option value="family_5" >가정용 5kg</option>
+	</optgroup>
+	</select>
+<hr>
+<h1>datalist option</h1>
+	<label for="prod2">포장여부</label>
+	<input type="text" id="prod2" list="pack">
+	<datalist id="pack">
+	<option value="package">선물포장</option>
+	<option value="no_package">포장안함</option>
+	</datalist>
+<hr>
+<h1>button</h1>
+<button type="submit">주문</button>
+<button type="reset">취소</button>
+<button type="button">버튼</button>
+<hr>
+<h1>output</h1>
+<form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+<input type="number" name="num1" value="0">+
+<input type="number" name="num2" value="0">=
+<output name="result" for="num"></output>
+</form>
+
+<hr>
+<h1>progress</h1>
+<label>10초남음</label>
+<progress value="50" max="60"></progress>
+<label>진행률 30%</label>
+<progress value="30" max="100"></progress>
+<hr>
+<h1>meter</h1>
+<label>점유율 0.8</label>
+<meter value="0.8"></meter>
+<label>사용량 64%</label>
+<meter min="0" max="100" value="64"></meter>
+<label>트랙픽 초과</label>
+<meter min="1024" max="10240" low="2048" high="8192" value="9216"></meter>
+<label>적절한 트래픽</label>
+<meter value="0.5" optimum="0.8"></meter>
+</body>
+</html>

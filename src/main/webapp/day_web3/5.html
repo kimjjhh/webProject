@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+*{margin: 0; padding: 0;}
+div {
+	border: 1px solid red;
+	width: 300px;
+	height: 100px;
+	padding: 10px;
+	margin: 20px;
+}
+span {border: 1px solid gray;}
+/*border-box란 width=content+padding+border*/
+/*ex) 500=478+(10*2)+(1*2)*/
+.box1{box-sizing: border-box;}
+/*content-box란 width가 content만을 의미*/
+.box2{box-sizing: content-box;}
+
+p{border: 1px solid gray;}
+
+/*고정*/
+.p1{width: 500px; height: 200px;}
+/*가변*/
+.p2{width: 50%; height: 200px;}
+
+</style>
+</head>
+<body>
+<div class="box1">BOX1</div>
+<div class="box2">BOX2</div>
+<div>
+	<span>BOX3-1</span><!--밑에<span>을 밑에말고 옆에두면 간격없이 붙어서 나온다-->
+	<span>BOX3-2</span>
+	<p>BOX3-3</p>
+	<img alt="" src="../images/tick.png">
+	<a href="http://www.naver.com">네이버로이동</a>
+	<a href="http://www.daum.net">daum으로이동</a>
+	<strong>CSS연습</strong>
+</div>
+
+
+	<p class="p1">p1</p>
+	<p class="p2">p2</p>
+
+</body>
+</html>

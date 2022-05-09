@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+/*웹에서 사용하는 폰트*/
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
+@font-face {
+            font-family: 'SDSamliphopangche_Outline';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+body{
+/*앞에 적은 폰트가 우선순위가 높다*/
+font-family:'Nanum Gothic','SDSamliphopangche_Outline',"MD개성체";
+color: white;
+background-color: pink;}
+/*겹치는일이 발생 할 경우 !important를 입력해 우선순위를 지정해준다*/
+p{border: 1px solid black !important;}
+p{border: 4px solid blue;}
+/*겹쳤을 경우 우선순위 : !important>inline>id>class>tag */
+h1{border: 4px solid blue !important;}
+#cc{border: 4px solid black;}
+.dd{border: 4px solid skyblue;}
+div.box{
+border: 1px solid skyblue;
+width: 100px;
+padding: 20px;
+}
+div.box:hover {
+	color: black;
+	transform: rotate(15deg);
+
+}
+p{
+/* 고정크기 : font-size: 20px; */
+font-size: 1.5em;/*기본의 몇 배 크기*/
+/*font-weight : bolder*/
+font-weight: 900;
+/* color: black; */
+/* color: rgb(0,255,0); red green blue*/
+color: #ff0000;
+}
+.textDeco{text-decoration: line-through;}
+.upper{text-transform: uppercase;}
+.caps{text-transform: capitalize;}
+</style>
+</head>
+<body>
+<h1>
+<span class="upper">@font-face {</span>
+<span class="caps">font-family: 'SDSamliphopangche_Outline';</span>
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+</h1>
+  <h1 id="cc" class="dd">블루베리에 관한 연구</h1>
+  <h2>블루베리와 <span class="textDeco">항산화</span> 효능</h2> 
+  <p class="aa">블루베리는 항산화제인 안토시아닌과 폴리페놀을 다량 포함하고 있습니다.</p>
+  <p id="bb">매사츄세츠 보스톤에 있는 …… 과일이라고 합니다.  </p>
+  <h2>블루베리와 노화</h2> 
+  <p> USDA 인류 영양 연구센터…… 사실을 발견하였습니다. </p>
+  <div class="box">
+  마우스오버
+  </div>
+</body>
+</html>

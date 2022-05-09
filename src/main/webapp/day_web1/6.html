@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>테이블만들기</title>
+<style>
+table, tb{border-collapse: collapse;}
+
+</style>
+</head>
+<body>
+<h1>테이블만들기</h1>
+<figure>
+<figcaption>개인정보1</figcaption>
+ <table border="1">
+    <tr>
+      <th>직원번호</th>
+      <th>이름</th>
+      <th>이메일</th>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>홍길동</td>
+      <td>aa@naver.com</td>
+    </tr>
+    <tr>
+      <td>200</td>
+      <td>김길동</td>
+      <td>bb@naver.com</td>
+    </tr>
+  </table>
+  <figcaption>개인정보2</figcaption>
+ </figure> 
+  <br>
+  <hr>
+  <br>
+  
+  
+  <table border="1">
+  <caption>개인신상</caption>
+  <colgroup>
+    <col style="width:100px;">
+    <col style="width:300px;">
+    <col style="width:100px;">
+    <col style="width:300px;">
+  </colgroup>
+  <tr>
+    <th>이름</th>
+    <td>김지현</td>
+    <th>연락처</th>
+    <td>010-1111-1111</td>
+  </tr>
+  
+  <tr>
+    <th>주소</th>
+    <td colspan="3">인천 부평구</td>
+  </tr>
+  
+  <tr>
+    <th rowspan="2">자기소개</th>
+    <td colspan="3"></td>
+  </tr>
+  
+    <tr>
+    <td colspan="3"></td>
+  </tr>
+  
+   </tr>
+    <tr>
+    <th>취미</th>
+    <td colspan="3"></td>
+  </tr>
+  
+  
+</table>
+  
+</body>
+</html>
